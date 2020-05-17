@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+
+button {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+
+    font-size: large;
+
+    margin: 2px;
+}
+
+.board {
+    margin-top: 50px;
+}

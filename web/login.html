@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div class='container justify-content-center'>
+
+        <h1>Tic Tac Toe Lobby</h1>
+
+        <br>
+        <br>
+
+        <div class='row'>
+
+            <div class='card col-xs-5'
+                style='border-style: solid; border-color: black; border-width: 2px; padding-top: 20px; padding-bottom: 50px;'>
+                <div class='card-body'>
+                    <h3 class='card-title'>Create a new game here!</h3>
+                    <br>
+                    <h5>Your room name will be : </h5>
+                    <h4 id='roomId'></h4>
+                    <br>
+                    <button class='btn btn-primary' onclick='startNew()'>Start a room</button>
+                </div>
+            </div>
+
+            <div class='col-xs-1'></div>
+
+            <div class='card col-xs-6'
+                style='border-style: solid; border-color: black; border-width: 2px; padding-top: 20px; padding-bottom: 50px;'>
+                <div class='card-body'>
+                    <h3 class='card-title'>Join an existing room here!</h3>
+
+                    <div class='form-group'>
+                        <h5>Type the room you want to join here: </h5>
+                        <br>
+                        <input type="text" id='subRoom' placeholder="Type room id" class='form-control'>
+                    </div>
+
+                    <button type='submit' class='btn btn-primary' onclick='joinRoom()'>Join room</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="http://glendatxn.local:3000/socket.io/socket.io.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
